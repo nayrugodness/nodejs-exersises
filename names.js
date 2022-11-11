@@ -11,7 +11,7 @@ app.post('/api/users', function(req, res) {
     const lastname = req.body.lastname;
   
     res.send(
-      `Hola ${name} ${lastname}`
+      {'saludo' : `Hola ${name} ${lastname}`}
     );
   });
   
