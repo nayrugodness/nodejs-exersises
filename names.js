@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.post('/api/users', function(req, res) {
+app.post('/', function(req, res) {
     const name = req.body.name;
     const lastname = req.body.lastname;
   
